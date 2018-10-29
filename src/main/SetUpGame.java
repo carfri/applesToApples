@@ -10,21 +10,12 @@ public class SetUpGame {
     private ArrayList<String> greenApples = new ArrayList<String>();
     private ArrayList<String> redApples = new ArrayList<String>();
     private Random randomGenerator;
+    public int playerAmount;
 
     public SetUpGame(Integer playerAmount)throws FileNotFoundException{
-        Player[] thePlayers = new Player[playerAmount];
-        for(int i = 0; i < playerAmount; i++){
-            thePlayers[i] = new Player(i);
-        }
+        this.playerAmount = playerAmount;
         loadRedApples();
         loadGreenApples();
-        dealToPlayers(thePlayers);
-        determineJudge(thePlayers);
-       /* for(int i = 0; i < playerAmount; i++){
-            System.out.println(thePlayers[i].getHand());
-            System.out.println(thePlayers[i].getJudge());
-        }*/
-
     }
 
     public ArrayList<String> getGreenApples() {
@@ -35,18 +26,35 @@ public class SetUpGame {
         this.greenApples = greenApples;
     }
 
-    private void loadRedApples() throws FileNotFoundException{
-        File redFile = new File("redApples.txt");
-        Scanner reader = new Scanner(redFile);
-        while (reader.hasNextLine())
-            redApples.add(reader.nextLine());
+    public ArrayList<String> getRedApples(){
+        return redApples;
     }
 
-    private void loadGreenApples() throws FileNotFoundException{
-        File greenFile = new File("greenApples.txt");
-        Scanner reader = new Scanner(greenFile);
-        while (reader.hasNextLine())
-            greenApples.add(reader.nextLine());
+    public void setRedApples(ArrayList<String> redApples){
+        this.redApples = redApples;
+    }
+
+
+    private void loadRedApples(){
+        try{
+            File redFile = new File("redApples.txt");
+            Scanner reader = new Scanner(redFile);
+            while (reader.hasNextLine())
+                redApples.add(reader.nextLine());
+        }catch (FileNotFoundException exception){
+            System.out.println("Cannot find redApples.txt");
+        }
+    }
+
+    private void loadGreenApples(){
+        try {
+            File greenFile = new File("greenApples.txt");
+            Scanner reader = new Scanner(greenFile);
+            while (reader.hasNextLine())
+                greenApples.add(reader.nextLine());
+        }catch (FileNotFoundException exception){
+            System.out.println("Cannot find greenaApples.txt");
+        }
     }
 
     private ArrayList<String> generateInitialHand(){
@@ -61,11 +69,11 @@ public class SetUpGame {
 
     }
 
-    private void dealToPlayers(Player[] thePlayers){
+   /* private void dealToPlayers(Player[] thePlayers){
         for (int i = 0; i < thePlayers.length; i++){
             thePlayers[i].setHand(generateInitialHand());
         }
-    }
+    }*/
 
     private void determineJudge(Player[] thePlayers){
         randomGenerator = new Random();

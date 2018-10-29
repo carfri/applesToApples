@@ -1,24 +1,18 @@
 package main;
 
-import com.sun.org.apache.xpath.internal.functions.FuncFalse;
-
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Player {
-    private int playerID;
     private boolean isBot;
     private boolean isJudge;
-    private boolean online;
     private Socket connection;
-    private BufferedReader inFromClient;
-    private DataOutputStream outToClient;
     private ArrayList<String> hand;
+    private Random randomGenerator;
+    private SetUpGame gameInstance;
 
-    public Player(int playerID){
-        this.playerID = playerID;
+    public Player(){
         this.isBot = false;
         this.isJudge = false;
     }
@@ -47,8 +41,15 @@ public class Player {
 
     }
 
-    private void writeToSocket(){
-
-    }
-
+    /*private void generateInitialHand(){
+        ArrayList<String> redApples = gameInstance.getRedApples();
+        randomGenerator = new Random();
+        System.out.println("hihihi");
+        for (int i = 0; i < 7; i++){
+            int index = randomGenerator.nextInt(redApples.size());
+            hand.add(redApples.get(index));
+            redApples.remove(index);
+        }
+        gameInstance.setRedApples(redApples);
+    }*/
 }
