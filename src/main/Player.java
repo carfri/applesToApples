@@ -7,6 +7,7 @@ import java.util.Random;
 public class Player {
     private boolean isBot;
     private boolean isJudge;
+    private int choice;
     private Socket connection;
     private ArrayList<String> hand;
     private Random randomGenerator;
@@ -52,4 +53,8 @@ public class Player {
         }
         gameInstance.setRedApples(redApples);
     }*/
+
+    public void setChoice(int choice){
+        this.choice = choice;
+    }
 }

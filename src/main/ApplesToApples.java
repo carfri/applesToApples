@@ -1,7 +1,6 @@
 package main;
 
 import java.util.InputMismatchException;
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ApplesToApples {

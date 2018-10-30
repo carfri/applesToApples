@@ -37,6 +37,7 @@ public class GameState {
             server.getConnections().get(i).sendToClient("Your hand of red apples:\n ");
             server.getConnections().get(i).sendCurrentHand();
             server.getConnections().get(i).setAcceptInput(true);
+            server.getConnections().get(i).sendToClient("please select an apple:");
         }
     }
 

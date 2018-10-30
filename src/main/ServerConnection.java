@@ -1,15 +1,14 @@
 package main;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 
 public class ServerConnection extends Thread {
     private Socket socket;
     private Server server;
     public Player player;
-    public boolean acceptInput = false;
+    private boolean acceptInput = false;
+    private BufferedReader reader;
     private DataInputStream din;
     private DataOutputStream dout;
     private boolean shouldRun = true;
@@ -20,6 +19,7 @@ public class ServerConnection extends Thread {
         this.server = server;
         player = new Player();
     }
+
 
     public void sendToClient(String data){
         try {
@@ -38,6 +38,7 @@ public class ServerConnection extends Thread {
         }
     }
 
+
     public void run(){
         try {
             this.din = new DataInputStream(socket.getInputStream());
@@ -45,7 +46,6 @@ public class ServerConnection extends Thread {
 
             while (shouldRun){
                 if (acceptInput == true){
-                    sendToClient("Select your apple:");
                     while (din.available() == 0){
                         try {
                             Thread.sleep(1);
@@ -53,15 +53,27 @@ public class ServerConnection extends Thread {
                             exception.printStackTrace();
                         }
                     }
-                    try {
-                        int choice = Integer.parseInt(din.readUTF());
-                    }catch (NumberFormatException exception){
-                        sendToClient("please input a valid number");
+                    String test = din.readUTF();
+                    System.out.println(test);
+                    if (isValidInput(test) == true){
+                        setAcceptInput(false);
+                        sendToClient("You've chosen card number" + "[" + test + "]");
+                        player.setChoice(Integer.parseInt(test));
+                        System.out.println(acceptInput);
+                    }
+                    else if (isValidInput(test) == false){
+                        sendToClient("your input is invalid! Try again:");
                     }
                 }
-
-                String textIn = din.readUTF();
-                sendToAllClients(textIn);
+                else if (acceptInput == false){
+                    try {
+                        Thread.sleep(1);
+                    }catch (InterruptedException exception){
+                        exception.printStackTrace();
+                    }
+                }
+                //String message = din.readUTF();
+                //System.out.println(message);
             }
             din.close();
             dout.close();
@@ -70,6 +82,24 @@ public class ServerConnection extends Thread {
             exception.printStackTrace();
         }
     }
+
+    private boolean isValidInput(String test){
+        boolean status;
+        int choice;
+        try{
+            choice = Integer.parseInt(test);
+            if (choice >= 0 && choice <= 6){
+                status = true;
+            }
+            else{
+                status = false;
+            }
+        }catch(NumberFormatException exception){
+            status = false;
+        }
+        return status;
+    }
+
 
     public void sendCurrentHand(){
         for (int i = 0; i < 7; i++){

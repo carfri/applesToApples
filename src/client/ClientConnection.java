@@ -32,6 +32,10 @@ public class ClientConnection extends Thread {
             dout = new DataOutputStream(socket.getOutputStream());
             while (shouldRun){
                 try {
+                    /*if (din.readUTF().substring(0,4) == "test"){
+                        System.out.println("found input from server")
+                        ;
+                    }*/
                     while (din.available()==0){
                         try{
                             Thread.sleep(1);
@@ -62,4 +66,5 @@ public class ClientConnection extends Thread {
             exception.printStackTrace();
         }
     }
+
 }
