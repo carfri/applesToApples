@@ -1,21 +1,25 @@
 package main;
 
-import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Player {
     private boolean isBot;
     private boolean isJudge;
+    public int id;
     private int choice;
-    private Socket connection;
+    private int judgeChoice;
     private ArrayList<String> hand;
-    private Random randomGenerator;
-    private SetUpGame gameInstance;
+    private int score;
+    private String playedCard;
 
-    public Player(){
-        this.isBot = false;
+    public Player(boolean isBot, int id){
+        this.isBot = isBot;
         this.isJudge = false;
+        this.id = id;
+    }
+
+    public boolean getIsBot(){
+        return this.isBot;
     }
 
     public void setHand(ArrayList<String> hand) {
@@ -26,35 +30,49 @@ public class Player {
         return this.hand;
     }
 
-    public void setJudge(){
-        this.isJudge = true;
+    public void setJudge(boolean flag){
+        this.isJudge = flag;
     }
 
     public boolean getJudge(){
         return this.isJudge;
     }
 
-    private void addCard(String card){
-
-    }
-
-    private void removeCard(){
-
-    }
-
-    /*private void generateInitialHand(){
-        ArrayList<String> redApples = gameInstance.getRedApples();
-        randomGenerator = new Random();
-        System.out.println("hihihi");
-        for (int i = 0; i < 7; i++){
-            int index = randomGenerator.nextInt(redApples.size());
-            hand.add(redApples.get(index));
-            redApples.remove(index);
-        }
-        gameInstance.setRedApples(redApples);
-    }*/
-
     public void setChoice(int choice){
         this.choice = choice;
     }
+
+    public int getChoice(){
+        return this.choice;
+    }
+
+    public void setJudgeChoice(int judgeChoice){
+        this.judgeChoice = judgeChoice;
+    }
+
+    public int getJudgeChoice(){
+        return this.judgeChoice;
+    }
+
+    public int getScore(){
+        return this.score;
+    }
+
+    public void setScore(int score){
+        this.score = score;
+    }
+
+    public void playCard(int card){
+        playedCard = hand.get(card);
+        hand.remove(card);
+    }
+
+    public void drawCard(String card){
+        hand.add(card);
+    }
+
+    public String getPlayedCard(){
+        return playedCard;
+    }
+
 }

@@ -3,19 +3,28 @@ package main;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.io.File;
+import java.util.Collections;
 import java.util.Scanner;
-import java.util.Random;
-
+/*
+* This class sets up very basic game parameters. Bots are generated for use later in the game loop.
+* The decks of red and green apples are loaded in from textfiles.
+* The decks are shuffled, everytime a new card is drawn the first element of the deck is drawn and then removed.
+* */
 public class SetUpGame {
     private ArrayList<String> greenApples = new ArrayList<String>();
     private ArrayList<String> redApples = new ArrayList<String>();
-    private Random randomGenerator;
+    private ArrayList<Player> botContainer = new ArrayList<Player>();
     public int playerAmount;
+    public int botAmount;
 
-    public SetUpGame(Integer playerAmount)throws FileNotFoundException{
+    public SetUpGame(Integer playerAmount, Integer botAmount){
         this.playerAmount = playerAmount;
+        this.botAmount = botAmount;
         loadRedApples();
         loadGreenApples();
+        Collections.shuffle(greenApples);
+        Collections.shuffle(redApples);
+        generateBots();
     }
 
     public ArrayList<String> getGreenApples() {
@@ -34,6 +43,17 @@ public class SetUpGame {
         this.redApples = redApples;
     }
 
+    private void generateBots(){
+        int counter = playerAmount;
+        for (int i = 0; i < botAmount; i++){
+            botContainer.add(new Player(true, counter));
+            counter ++;
+        }
+    }
+
+    public ArrayList<Player> getBotContainer(){
+        return this.botContainer;
+    }
 
     private void loadRedApples(){
         try{
@@ -57,27 +77,21 @@ public class SetUpGame {
         }
     }
 
-    private ArrayList<String> generateInitialHand(){
-        ArrayList<String> hand = new ArrayList<String>();
-        randomGenerator = new Random();
-        for (int i = 0; i < 7; i++){
-            int index = randomGenerator.nextInt(redApples.size());
-            hand.add(redApples.get(index));
-            redApples.remove(index);
-        }
-        return hand;
-
+    public void drawRedApple(){
+        redApples.remove(0);
     }
 
-   /* private void dealToPlayers(Player[] thePlayers){
-        for (int i = 0; i < thePlayers.length; i++){
-            thePlayers[i].setHand(generateInitialHand());
-        }
-    }*/
-
-    private void determineJudge(Player[] thePlayers){
-        randomGenerator = new Random();
-        int index = randomGenerator.nextInt(thePlayers.length);
-        thePlayers[index].setJudge();
+    public void drawGreenApple(){
+        greenApples.remove(0);
     }
+
+    public void addRedApple(String card){
+        redApples.add(card);
+    }
+
+    public int getTotalPlayerAmount(){
+        return playerAmount + botAmount;
+    }
+
+
 }
