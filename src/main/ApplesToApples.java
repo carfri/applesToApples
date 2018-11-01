@@ -1,5 +1,7 @@
 package main;
-
+/*
+* Author: Carl Frisenstam. carl.frisenstam@gmail.com
+* */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

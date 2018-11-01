@@ -1,7 +1,13 @@
 package main;
+/*
+ * Author: Carl Frisenstam. carl.frisenstam@gmail.com
+ * */
 
 import java.util.ArrayList;
-
+/*
+* The player class defines all variables the make out a player.
+* Bots are also player objects, however their isBot flag is set to true when initialized.
+* */
 public class Player {
     private boolean isBot;
     private boolean isJudge;

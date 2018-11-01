@@ -1,4 +1,7 @@
 package main;
+/*
+ * Author: Carl Frisenstam. carl.frisenstam@gmail.com
+ * */
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

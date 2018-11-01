@@ -1,4 +1,7 @@
 package client;
+/*
+ * Author: Carl Frisenstam. carl.frisenstam@gmail.com
+ * */
 
 import java.io.BufferedReader;
 import java.io.IOException;
