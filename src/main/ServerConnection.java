@@ -54,7 +54,7 @@ public class ServerConnection extends Thread {
             sendToClient("Established connection to server. Please wait for all players to join. \n");
 
             while (shouldRun){
-                if (player.getJudge() == true && acceptInput == true){
+                if (player.getJudge() == true && acceptInput == true){ //check if a player is flaged as judge and if the game is waiting for judge input
 
                     while (din.available() == 0){
                         try {
@@ -65,7 +65,7 @@ public class ServerConnection extends Thread {
                     }
                     String judgeInput = din.readUTF();
                     System.out.println(judgeInput);
-                    if (isValidJudgeInput(judgeInput) == true){
+                    if (isValidJudgeInput(judgeInput) == true){ //checks if the judge input is valid, if it is record choice
                         setAcceptInput(false);
                         sendToClient("You've selected player [" + judgeInput + "] to win this round.");
                         player.setJudgeChoice(Integer.parseInt(judgeInput));
@@ -75,7 +75,7 @@ public class ServerConnection extends Thread {
                         sendToClient("Your input is invalid! Try again:");
                     }
                 }
-                if (player.getJudge() == false && acceptInput == true){
+                if (player.getJudge() == false && acceptInput == true){ // check if game is waiting for input from players
                     while (din.available() == 0){
                         try {
                             Thread.sleep(1);
@@ -85,7 +85,7 @@ public class ServerConnection extends Thread {
                     }
                     String userInput = din.readUTF();
                     System.out.println(userInput);
-                    if (isValidUserInput(userInput) == true){
+                    if (isValidUserInput(userInput) == true){ // record player choices if input is valid
                         setAcceptInput(false);
                         sendToClient("You've chosen card number" + "[" + userInput + "]");
                         player.setChoice(Integer.parseInt(userInput));
@@ -96,7 +96,7 @@ public class ServerConnection extends Thread {
                         sendToClient("your input is invalid! Try again:");
                     }
                 }
-                else if (acceptInput == false){
+                else if (acceptInput == false){ //if game isn't looking for userinput, wait
                     try {
                         Thread.sleep(1);
                     }catch (InterruptedException exception){
@@ -132,12 +132,8 @@ public class ServerConnection extends Thread {
         int choice;
         try{
             choice = Integer.parseInt(test);
-            if (choice >= 0 && choice < server.getGameInstance().getTotalPlayerAmount()){
+            if (choice >= 0 && choice < server.getGameInstance().getTotalPlayerAmount() - 1){
                 System.out.println("lalalalaal");
-                if (choice == player.id){
-                    System.out.println("yoyoyo you judged");
-                    return false;
-                }
                 status = true;
             }
             else{

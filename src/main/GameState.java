@@ -22,13 +22,13 @@ public class GameState {
     private ArrayList<ServerConnection> connections;
     private ArrayList<Player> thePlayers = new ArrayList<Player>();
     private ServerConnection judge;
+    private ArrayList<String> playedCards = new ArrayList<String>();
 
     public GameState(Server server){
         this.server = server;
         this.connections = server.getConnections();
         this.thePlayers = generatePlayersList();
         System.out.println(thePlayers);
-        System.out.println("asgfdase");
         dealToPlayers();
         gameLoop();
     }
@@ -45,16 +45,17 @@ public class GameState {
 
     public void gameLoop(){
         while (true){
+            resetPlayedCards();
             resetJudge();
             resetChoice();
             determineJudge();
             askPlayersForRedApples();
             waitForAllPlayers();
             askBotsForRedApples();
-            for (int i = 0; i < connections.size(); i++){
+            showPlayedApples();
+            for (int i = 0; i < connections.size(); i++){           //Checks whether or not a player is judge
                 if (connections.get(i).player.getJudge() == true){
                     judge = connections.get(i);
-                    showToJudge();
                     System.out.println("Player is judging");
                     collectPlayerVerdict();
                     waitForJudge();
@@ -83,6 +84,10 @@ public class GameState {
         greenDeck.remove(index);
         server.getGameInstance().setGreenApples(greenDeck);
         return drawnCard;
+    }
+
+    private void resetPlayedCards(){
+        playedCards.clear();
     }
 
     private void resetJudge(){
@@ -142,6 +147,7 @@ public class GameState {
                     }
                 }
             }
+            //continuisly check if a player is still flaged for input
             for (int i = 0; i < connections.size(); i++){
                 if (connections.get(i).getAcceptInput() == true){
                     System.out.println("Still waiting");
@@ -160,28 +166,37 @@ public class GameState {
         }
     }
 
-    private void showToJudge(){
-        for (int i = 0; i < thePlayers.size(); i++){
-            if (thePlayers.get(i).getJudge() == false){
-                judge.sendToClient( "Player [" + i +"]: " + thePlayers.get(i).getPlayedCard() + "\n");
+    private void showPlayedApples(){
+        for (int i = 0; i < thePlayers.size(); i++) {
+            if (thePlayers.get(i).getJudge() == false) {
+                playedCards.add(thePlayers.get(i).getPlayedCard());
+                System.out.println("added to playedCard deck");
             }
+        }
+        Collections.shuffle(playedCards);
+        for (int i = 0; i < connections.size(); i++){
+            connections.get(i).sendToClient("########################################################################################################\n" +
+                    "                         These red apples were played this round                     \n");
+            for (int p = 0; p < playedCards.size(); p++){
+                connections.get(i).sendToClient( "[" + p + "]" + playedCards.get(p)+ "\n");
+            }
+            connections.get(i).sendToClient("########################################################################################################\n");
+        }
+        System.out.println("hahaha");
+        for (int i = 0; i < playedCards.size(); i++){
         }
     }
 
     private void collectPlayerVerdict(){
         judge.sendToClient("Please select the combination of apples to win this round.");
         judge.setAcceptInput(true);
-
     }
 
     private void collectBotVerdict(){
         randomGenerator = new Random();
         for (int i = 0; i < thePlayers.size(); i++){
             if (thePlayers.get(i).getJudge() == true){
-                int index = randomGenerator.nextInt(thePlayers.size());
-                while (index == i){
-                    index = randomGenerator.nextInt(thePlayers.size());
-                }
+                int index = randomGenerator.nextInt(playedCards.size());
                 thePlayers.get(i).setJudgeChoice(index);
             }
         }
@@ -201,13 +216,18 @@ public class GameState {
     private void distributeScore(){
         for (int i = 0; i < thePlayers.size(); i++){
             if (thePlayers.get(i).getJudge() == true){
-                thePlayers.get(thePlayers.get(i).getJudgeChoice()).setScore(thePlayers.get(thePlayers.get(i).getJudgeChoice()).getScore() + 1);
-                connections.get(0).sendToAllClients(
-                        "##################################################################################\n" +
-                                "#                                                                                #\n" +
-                                "# Player [" + thePlayers.get(i).getJudgeChoice() + "] have been awarded 1 point for winning this round!                   #\n" +
-                                "#                                                                                #\n" +
-                                "##################################################################################");
+                String winningCard = playedCards.get(thePlayers.get(i).getJudgeChoice());
+                for (int p = 0; p < thePlayers.size(); p++){
+                    if (winningCard.equals(thePlayers.get(p).getPlayedCard())){ //check each player if he holds the winning card
+                        thePlayers.get(p).setScore(thePlayers.get(p).getScore() + 1);
+                        connections.get(0).sendToAllClients(
+                                "##################################################################################\n" +
+                                        "#                                                                                #\n" +
+                                        "# Player [" + p + "] have been awarded 1 point for winning this round!                   #\n" +
+                                        "#                                                                                #\n" +
+                                        "##################################################################################");
+                    }
+                }
             }
         }
     }
@@ -313,6 +333,10 @@ public class GameState {
         for (int i = 0; i < playerNumbers; i++){
             connections.get(i).close();
         }
+    }
+
+    public ArrayList<String> getPlayedCards(){
+        return this.playedCards;
     }
 
 
