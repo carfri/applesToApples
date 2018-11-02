@@ -339,6 +339,10 @@ public class GameState {
         return this.playedCards;
     }
 
+    public ArrayList<Player> getThePlayers(){
+        return this.thePlayers;
+    }
+
 
 
 

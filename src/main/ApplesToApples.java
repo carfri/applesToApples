@@ -12,6 +12,7 @@ public class ApplesToApples {
     * Sets up a new game
     * Initilizes server. The game loop is run server side and is started after all clients are connected.
     * */
+    private static Server server;
     public static void main(String [] args){
         Scanner reader = new Scanner(System.in);
         System.out.println("Please enter the number of players: ");
@@ -22,7 +23,7 @@ public class ApplesToApples {
         int p = fetchUserInput(reader);
         reader.close();
         SetUpGame gameInstance = new SetUpGame(n, b);
-        new Server(p, gameInstance);
+        server = new Server(p, gameInstance);
     }
 
     private static int fetchUserInput(Scanner reader){
@@ -38,5 +39,10 @@ public class ApplesToApples {
             return fetchUserInput(reader);
         }
     }
+
+    public Server getServer(){
+        return server;
+    }
+
 }
 

@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72854dce-ced2-4bff-9653-4f2555e460c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3_sources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/main/GameStateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/main/SetUpGameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/applesToApples/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/applesToApples/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/applesToApples/client/ClientConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/applesToApples/client/ClientConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applesToApples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/applesToApples.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/applesToApples/main/ApplesToApples.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/applesToApples/main/ApplesToApples.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/applesToApples/main/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/applesToApples/main/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/applesToApples/main/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/applesToApples/main/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/applesToApples/main/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/applesToApples/main/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/applesToApples/main/ServerConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/applesToApples/main/ServerConnection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/applesToApples/main/SetUpGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/applesToApples/main/SetUpGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ClientConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ApplesToApples.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ApplesToApples.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ApplesToApples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ApplesToApples.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ServerConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ServerConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ServerConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ServerConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/SetUpGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SetUpGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SetUpGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SetUpGame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,40 +22,51 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ApplesToApples$SetUpGameTest.ic" NAME="SetUpGameTest Coverage Results" MODIFIED="1541163843401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1883290133">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="iml" value="1" />
-          <entry key="java" value="16" />
-          <entry key="txt" value="3" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="41" />
+          <entry key="txt" value="4" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="16" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="41" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="22886" />
+          <entry key="java" value="24070" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22886" />
+          <entry key="JAVA" value="24070" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
@@ -70,15 +74,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Downloads/Apples2Apples.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/SetUpGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+            <state relative-caret-position="220">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11199#11200#0" expanded="true" />
-                <element signature="e#11237#11238#0" expanded="true" />
+                <element signature="e#1147#1148#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1291#1292#0" expanded="true" />
+                <element signature="method#generateBots#0;class#SetUpGame#0" />
               </folding>
             </state>
           </provider>
@@ -87,36 +94,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ApplesToApples.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="1" selection-end-line="4" />
+            <state relative-caret-position="755">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1618#1619#0" expanded="true" />
+                <element signature="e#1647#1648#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/SetUpGame.java">
+        <entry file="file://$PROJECT_DIR$/src/tests/main/SetUpGameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#SetUpGame#0;class#SetUpGame#0" />
-                <element signature="method#generateBots#0;class#SetUpGame#0" />
-                <element signature="method#loadRedApples#0;class#SetUpGame#0" />
-                <element signature="method#loadGreenApples#0;class#SetUpGame#0" />
+                <element signature="e#616#624#0" expanded="true" />
+                <element signature="method#testGetRedApples#0;class#SetUpGameTest#0" />
+                <element signature="e#1265#1273#0" expanded="true" />
+                <element signature="method#testShuffleDeck#0;class#SetUpGameTest#0" />
+                <element signature="e#1880#1888#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
+            <state relative-caret-position="8">
+              <caret line="97" column="5" lean-forward="true" selection-start-line="332" selection-start-column="13" selection-end-line="332" selection-end-column="46" />
               <folding>
                 <element signature="method#generatePlayersList#0;class#GameState#0" />
                 <element signature="method#gameLoop#0;class#GameState#0" />
@@ -137,7 +147,8 @@
                 <element signature="method#returnPlayedApplesToDeck#0;class#GameState#0" />
                 <element signature="method#drawNewCards#0;class#GameState#0" />
                 <element signature="method#checkForWinner#0;class#GameState#0" />
-                <element signature="method#gameWon#0;class#GameState#0" />
+                <element signature="e#13532#13533#0" expanded="true" />
+                <element signature="e#13558#13559#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,70 +157,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="245">
               <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ServerConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#sendToClient#0;class#ServerConnection#0" />
-                <element signature="method#sendToAllClients#0;class#ServerConnection#0" />
-                <element signature="method#isValidUserInput#0;class#ServerConnection#0" />
-                <element signature="method#isValidJudgeInput#0;class#ServerConnection#0" />
-                <element signature="method#sendCurrentHand#0;class#ServerConnection#0" />
-                <element signature="method#close#0;class#ServerConnection#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#listenForInput#0;class#Client#0" />
-                <element signature="method#fetchUserInput#0;class#Client#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/ClientConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#close#0;class#ClientConnection#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding>
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#999#1000#0" expanded="true" />
-                <element signature="method#playCard#0;class#Player#0" />
               </folding>
             </state>
           </provider>
@@ -221,6 +172,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -238,14 +190,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/ApplesToApples.java" />
-        <option value="$PROJECT_DIR$/src/main/SetUpGame.java" />
         <option value="$PROJECT_DIR$/src/main/Server.java" />
         <option value="$PROJECT_DIR$/src/client/Client.java" />
         <option value="$PROJECT_DIR$/src/client/ClientConnection.java" />
         <option value="$PROJECT_DIR$/src/main/Player.java" />
         <option value="$PROJECT_DIR$/src/main/ServerConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/SetUpGameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/SetUpGame.java" />
         <option value="$PROJECT_DIR$/src/main/GameState.java" />
+        <option value="$PROJECT_DIR$/src/main/ApplesToApples.java" />
+        <option value="$PROJECT_DIR$/src/tests/main/SetUpGameTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/main/GameStateTest.java" />
       </list>
     </option>
   </component>
@@ -266,6 +221,49 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
+          <expand>
+            <path>
+              <item name="ApplesToApples" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="applesToApples" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="ApplesToApples" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="applesToApples" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ApplesToApples" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="applesToApples" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ApplesToApples" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="applesToApples" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
+          <expand>
+            <path>
+              <item name="ApplesToApples" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="applesToApples" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="ApplesToApples" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="applesToApples" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,25 +289,41 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ApplesToApples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541116334024" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541168039559" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tests" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="main" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="main" />
     </key>
@@ -329,13 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
-    <configuration name="Apples2Apples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Apples2Apples" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SetUpGameTest">
     <configuration name="ApplesToApples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.ApplesToApples" />
       <module name="applesToApples" />
@@ -362,21 +370,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Client" />
+    <configuration name="F:\gitProjects\applesToApples\src\tests in applesToApples" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="applesToApples" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="ALTERNATIVE_JRE_PATH" value="F:\javaJDE\jre" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="PARAMETERS" value="" />
+      <dir value="$PROJECT_DIR$/src/tests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Server" />
+    <configuration name="GameStateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="applesToApples" />
       <extension name="coverage">
         <pattern>
@@ -384,24 +391,57 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.GameStateTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetUpGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="applesToApples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.SetUpGameTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main in applesToApples" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="applesToApples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ApplesToApples" />
-      <item itemvalue="Application.Apples2Apples" />
-      <item itemvalue="Application.Client" />
+      <item itemvalue="JUnit.main in applesToApples" />
+      <item itemvalue="JUnit.F:\gitProjects\applesToApples\src\tests in applesToApples" />
       <item itemvalue="Application.Client (1)" />
-      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.ApplesToApples" />
+      <item itemvalue="JUnit.SetUpGameTest" />
+      <item itemvalue="JUnit.GameStateTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SetUpGameTest" />
+        <item itemvalue="JUnit.GameStateTest" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.ApplesToApples" />
-        <item itemvalue="Application.Apples2Apples" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -425,11 +465,47 @@
       <workItem from="1540984233460" duration="34386000" />
       <workItem from="1541074493769" duration="20191000" />
       <workItem from="1541157335969" duration="239000" />
+      <workItem from="1541157586499" duration="5038000" />
+      <workItem from="1541162772006" duration="726000" />
+      <workItem from="1541163509034" duration="254000" />
+      <workItem from="1541163774908" duration="4266000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SetUpGameTest - 2018.11.02 at 14h 43m 06s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetUpGameTest - 2018.11.02 at 14h 43m 25s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetUpGameTest - 2018.11.02 at 14h 43m 29s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetUpGameTest - 2018.11.02 at 14h 45m 40s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetUpGameTest - 2018.11.02 at 14h 45m 56s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetUpGameTest - 2018.11.02 at 14h 48m 04s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetUpGameTest - 2018.11.02 at 14h 50m 54s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameStateTest - 2018.11.02 at 15h 04m 29s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetUpGameTest - 2018.11.02 at 15h 06m 32s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetUpGameTest - 2018.11.02 at 15h 14m 00s.xml">
+      <configuration name="SetUpGameTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126876000" />
+    <option name="totallyTimeSpent" value="137160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,7 +519,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19936034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20788912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -452,7 +528,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32212582" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3167028" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -462,6 +538,8 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286334" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.329718" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -480,9 +558,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/applesToApples.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/greenApples.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/redApples.txt" />
@@ -501,42 +576,134 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/temp/main/GameState.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/SetUpGameTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11199#11200#0" expanded="true" />
-            <element signature="e#11237#11238#0" expanded="true" />
+            <element signature="method#listenForInput#0;class#Client#0" />
+            <element signature="method#fetchUserInput#0;class#Client#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ClientConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ServerConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="863">
+          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#sendToClient#0;class#ServerConnection#0" />
+            <element signature="method#sendToAllClients#0;class#ServerConnection#0" />
+            <element signature="method#isValidUserInput#0;class#ServerConnection#0" />
+            <element signature="method#isValidJudgeInput#0;class#ServerConnection#0" />
+            <element signature="method#sendCurrentHand#0;class#ServerConnection#0" />
+            <element signature="method#close#0;class#ServerConnection#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applesToApples.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/temp-testng-customsuite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/greenApples.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/SetUpGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="method#generateBots#0;class#SetUpGame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/main/SetUpGameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#616#624#0" expanded="true" />
+            <element signature="method#testGetRedApples#0;class#SetUpGameTest#0" />
+            <element signature="e#1265#1273#0" expanded="true" />
+            <element signature="method#testShuffleDeck#0;class#SetUpGameTest#0" />
+            <element signature="e#1880#1888#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ApplesToApples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="1" selection-end-line="4" />
+        <state relative-caret-position="755">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1618#1619#0" expanded="true" />
+            <element signature="e#1647#1648#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/SetUpGame.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/main/GameStateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#SetUpGame#0;class#SetUpGame#0" />
-            <element signature="method#generateBots#0;class#SetUpGame#0" />
-            <element signature="method#loadRedApples#0;class#SetUpGame#0" />
-            <element signature="method#loadGreenApples#0;class#SetUpGame#0" />
+            <element signature="e#180#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
+        <state relative-caret-position="8">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="332" selection-start-column="13" selection-end-line="332" selection-end-column="46" />
           <folding>
             <element signature="method#generatePlayersList#0;class#GameState#0" />
             <element signature="method#gameLoop#0;class#GameState#0" />
@@ -557,69 +724,8 @@
             <element signature="method#returnPlayedApplesToDeck#0;class#GameState#0" />
             <element signature="method#drawNewCards#0;class#GameState#0" />
             <element signature="method#checkForWinner#0;class#GameState#0" />
-            <element signature="method#gameWon#0;class#GameState#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ServerConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#sendToClient#0;class#ServerConnection#0" />
-            <element signature="method#sendToAllClients#0;class#ServerConnection#0" />
-            <element signature="method#isValidUserInput#0;class#ServerConnection#0" />
-            <element signature="method#isValidJudgeInput#0;class#ServerConnection#0" />
-            <element signature="method#sendCurrentHand#0;class#ServerConnection#0" />
-            <element signature="method#close#0;class#ServerConnection#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#listenForInput#0;class#Client#0" />
-            <element signature="method#fetchUserInput#0;class#Client#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ClientConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#close#0;class#ClientConnection#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding>
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="method#playCard#0;class#Player#0" />
+            <element signature="e#13532#13533#0" expanded="true" />
+            <element signature="e#13558#13559#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -681,13 +787,24 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>hamcrest-core-1.3-sources</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

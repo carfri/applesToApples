@@ -25,13 +25,18 @@ public class SetUpGame {
         this.botAmount = botAmount;
         loadRedApples();
         loadGreenApples();
-        Collections.shuffle(greenApples);
-        Collections.shuffle(redApples);
+        greenApples = shuffleDeck(greenApples);
+        redApples = shuffleDeck(redApples);
         generateBots();
     }
 
     public ArrayList<String> getGreenApples() {
         return greenApples;
+    }
+
+    public ArrayList<String> shuffleDeck(ArrayList<String> deck){
+        Collections.shuffle(deck);
+        return deck;
     }
 
     public void setGreenApples(ArrayList<String> greenApples){
